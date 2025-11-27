@@ -1,0 +1,1 @@
+# Sprint 2, Week 11: Python - Variable Annotations
