@@ -51,7 +51,7 @@ class Server:
         start, end = index_range(page, page_size)
         dataset = self.dataset()
         return dataset[start:end]
-    
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """
         Return a dictionary with pagination information.
