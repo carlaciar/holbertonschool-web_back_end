@@ -5,7 +5,7 @@ Helper functions and a class for paginating a dataset.
 
 import csv
 import math
-from typing import List
+from typing import List, Dict
 
 
 def index_range(page: int, page_size: int):
