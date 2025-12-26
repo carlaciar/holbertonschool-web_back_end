@@ -1,5 +1,5 @@
-// 1️. Define classes FIRST (no hoisting for classes)
-class HolbertonClass {
+// 1️. Define and EXPORT the classes
+export class HolbertonClass {
   constructor(year, location) {
     this._year = year;
     this._location = location;
@@ -14,7 +14,7 @@ class HolbertonClass {
   }
 }
 
-class StudentHolberton {
+export class StudentHolberton {
   constructor(firstName, lastName, holbertonClass) {
     this._firstName = firstName;
     this._lastName = lastName;
@@ -37,13 +37,13 @@ class StudentHolberton {
 // 2️. Create class instances AFTER definitions
 const class2019 = new HolbertonClass(2019, 'San Francisco');
 const class2020 = new HolbertonClass(2020, 'San Francisco');
-  
+
 // 3️. Create students
 const student1 = new StudentHolberton('Guillaume', 'Salva', class2020);
 const student2 = new StudentHolberton('John', 'Doe', class2020);
 const student3 = new StudentHolberton('Albert', 'Clinton', class2019);
 const student4 = new StudentHolberton('Donald', 'Bush', class2019);
 const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
-  
-// 4️. Default export (important)
+
+// 4️. DEFAULT export for the list
 export default [student1, student2, student3, student4, student5];
