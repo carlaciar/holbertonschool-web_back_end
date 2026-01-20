@@ -16,7 +16,7 @@ const app = http.createServer((req, res) => {
 
     fs.readFile(database, 'utf-8', (err, data) => {
       if (err) {
-        res.end('Cannot load the database\n');
+        res.end('Cannot load the database');
         return;
       }
 
@@ -38,6 +38,7 @@ const app = http.createServer((req, res) => {
         if (!fields[field]) {
           fields[field] = [];
         }
+
         fields[field].push(firstName);
       });
 
